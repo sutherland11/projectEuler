@@ -1,6 +1,6 @@
-# Finds the largest numbe rthat is a product of 2 3-digit number and a palindrome.
+# Finds the largest number that is a product of 2 3-digit number and is a palindrome.
 
-# Ths function simply returns true of the 2 factors produce a product that is a plaindrome.
+# Ths function simply returns true if the 2 factors produce a product that is a palindrome.
 def isPalindrome(num1, num2):
     return str(num1 * num2) == str(num1 * num2)[::-1]
 
