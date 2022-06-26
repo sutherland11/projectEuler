@@ -13,13 +13,13 @@ def largestPrimeFactor(num):
     # We can then divide by factrs between 5 and the square root of the original number, since the largest prime factor cannot be greater than the square root of the number itself.
     # We can also increment our loop by 6 each time because we have already removed all factors of 2 and 3 and therefore 6.
     # The code will record the largest prime during this process.
-    for i in range(5, int(math.sqrt(num)) + 1, 6):
-        while num % i == 0:
-            largestPrime = i
-            num /= i
-        while num % (i+2) == 0:
-            largestPrime = i+2
-            num /= i+2
+    for factor in range(5, int(math.sqrt(num)) + 1, 6):
+        while num % factor == 0:
+            largestPrime = factor
+            num /= factor
+        while num % (factor + 2) == 0:
+            largestPrime = factor + 2
+            num /= factor + 2
     # Either the remaining factor will be the largest prime or the largest prime will already have been recorded.
     if num > 4:
         largestPrime = num
