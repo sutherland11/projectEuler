@@ -20,7 +20,7 @@ def largestPrimeFactor(num):
         while num % (i+2) == 0:
             largestPrime = i+2
             num /= i+2
-    # Either the remaingin factor will be the largest prime or the largest prime will already have been recorded.
+    # Either the remaining factor will be the largest prime or the largest prime will already have been recorded.
     if num > 4:
         largestPrime = num
     return largestPrime
