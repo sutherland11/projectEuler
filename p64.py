@@ -3,7 +3,7 @@ from math import floor
 from traceback import format_exc
 
 # This method will find the period of the square root of N when written as a continued fraction. Essentially a0, a1, a2, etc can be found based on the previous iterations 
-# values of the same values. The pattern can be seen algebraically. Once the pattern repeats (seen when d and m are reoccuring parameters) the period has been found.
+# values. The pattern can be seen algebraically. Once the pattern repeats (seen when d and m are reoccuring parameters) the period has been found.
 def findPeriod(N):
     parameters = []
     a0 = floor(sqrt(N))
