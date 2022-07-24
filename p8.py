@@ -4,7 +4,7 @@ from math import prod
 # Main method finds the largest product of N numbers in a given series.
 def main():
     # opening file at given path and creating a list
-    path = 'C:\\Users\\wills\\OneDrive\\Desktop\\myPyScripts\\ProjectEuler\\8\\numFile.txt'
+    path = 'C:\\Users\\wills\\OneDrive\\Desktop\\myPyScripts\\ProjectEuler\\8\\p8numberFile.txt'
     file = open(path, 'r')
     nums = [int(num) for num in file.read() if num != '\n']
 
